@@ -48,4 +48,5 @@ $on-laptop:        800px;
 // Import partials from the `whiteglass` theme.
 @import "whiteglass";
 
-@import "badge";
+@import "bootstrap/badge";
+@import "bootstrap/bootstrap-grid.min";
