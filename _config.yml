@@ -1,0 +1,120 @@
+# Welcome to Jekyll!
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Gavin Greer 
+author: Gavin Greer
+email: gavindgreer@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Personal website and blog powered by Jekyll and Whiteglass of 
+  Gavin Greer for cataloging projects, techy things I've learned 
+  and other stuff.  
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.gavingreer.com" # the base hostname & protocol for your site, e.g. http://example.com
+lang: en
+timezone: America/Chicago
+
+# Asset dirs
+css_dir: "/assets/css/"
+img_dir: "/assets/img/"
+js_dir: "/assets/js/"
+
+# Social Media
+twitter_username: gavin_greer
+twitter_image:
+github_username:  nivagator
+google_analytics: UA-157023360-1
+linkedin: gavingreer
+
+# Build settings
+#theme: minima
+theme: jekyll-whiteglass
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: category_archives
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
+
+##################################################
+pagination: 
+  
+  # Site-wide kill switch
+  enabled: true
+  debug: false
+  collection: 'posts'
+  
+  # how many objects per paginated page, old setting is 'paginate' (default: 0, means all)
+  per_page: 5
+  permalink: '/page/:num' # pages are html files, linked jekyll extensionless permalink style
+  
+  # optional title format for the paginated pages (supports :title for original page title, :num for pagination page number, :max for total number of pages)
+  title: ':title - page :num'
+  limit: 0 # default: 0, means all
+  sort_field: 'date' # optional, defined the field that the posts should be sorted on
+  
+  # optional, sorts the posts in reverse order (omit to default descending or sort_reverse: true)
+  sort_reverse: true   
+  category: 'posts'
+  tag: '' # optional, the default tag to use, omit to disable
+
+  # Optional, the default locale to use, omit to disable (depends on a field 'locale' to be specified in the posts, 
+  # in reality this can be any value, suggested are the Microsoft locale-codes (e.g. en_US, en_GB) or simply the ISO-639 language code )
+  locale: ''
+
+  # Optional,omit or set both before and after to zero to disable. 
+  # Controls how the pagination trail for the paginated pages look like. 
+  trail: 
+    before: 2
+    after: 2
+  # Optional, the default file extension for generated pages (e.g html, json, xml).
+  # Internally this is set to html by default
+  extension: html
+
+  # Optional, the default name of the index file for generated pages (e.g. 'index.html')
+  # Without file extension
+  indexpage: 'index'
+###########################################################
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

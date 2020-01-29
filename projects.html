@@ -1,0 +1,35 @@
+---
+layout: default
+title: Projects
+---
+<h1>Web Projects</h1>
+
+<div class="projects">
+  {% for project in site.data.projects %}
+  <h2 class="title">
+    {% if project.status == "active" %}<a href="{{ project.url }}">{{ project.name }}</a>
+    {% else %}{{ project.name }}
+    {% endif %}
+  </h2>
+  <small>
+    {% if project.publish-date %} Published on: <span itemprop="datePublished">{{ project.publish-date }}</span> | {% endif %}
+  </small>
+    <span class="badge 
+      {% if project.status == "inactive" %}
+        badge-danger
+      {% elsif project.status == "in development" %}
+        badge-default
+      {% else %}
+        badge-success
+      {% endif %}">{{ project.status | capitalize }}</span>
+    {% if project.description %}
+    <p class="">{{ project.description }}</p>
+    {% endif %}
+    {% if project.repo %}
+    <a href="https://github.com/{{ site.github_username }}/{{ project.repo }}">Github Repo</a>
+    {% endif %}
+    {% if forloop.last == false %}<hr>{% endif %}
+  {% endfor %}
+</div>
+
+
