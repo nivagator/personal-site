@@ -1,1 +1,1 @@
-# My personal websit and blog created with Jekyll
+# My personal website and blog created with Jekyll
