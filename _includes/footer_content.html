@@ -2,4 +2,29 @@
 {% if site.feed and site.feed.path %}
   {% assign feed_path = site.feed.path %}
 {% endif %}
-&copy; {{ site.author }} {{ 'now' | date: "%Y" }} - Powered by <a href="https://jekyllrb.com">Jekyll</a> &amp; <a href="https://github.com/yous/whiteglass">whiteglass</a> - Subscribe via <a href="{{ feed_path | absolute_url }}">RSS</a>
+<h2 class="footer-heading">{{ site.title | escape }}</h2>
+<div class="footer-col-wrapper">
+  <div class="footer-col footer-col-1">
+    <ul class="contact-list">
+      {%- if site.contact_email -%}
+      <li class="p-name">
+        Contact Me:
+      </li>
+      <li><a class="u-email" href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></li>
+      {%- endif -%}
+    </ul>
+  </div>
+  <div class="footer-col footer-col-2">
+    {%- include social.html -%}
+  </div>
+  <div class="footer-col footer-col-3">
+    <p>{{- site.description | escape -}}</p>
+  </div>
+</div>
+
+<div class="copyright">
+  
+    &copy; {{ site.author }} {{ 'now' | date: "%Y" }} - Powered by <a href="https://jekyllrb.com">Jekyll</a> &amp; <a href="https://github.com/yous/whiteglass">whiteglass</a> - Subscribe via <a href="{{ feed_path | absolute_url }}">RSS</a>
+  
+</div>
+

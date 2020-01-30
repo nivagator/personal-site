@@ -12,9 +12,9 @@
 title: Gavin Greer 
 author: Gavin Greer
 email: gavindgreer@gmail.com
+contact_email: hello@gavingreer.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal website and blog powered by Jekyll and Whiteglass of 
-  Gavin Greer for cataloging projects, techy things I've learned 
+  Personal website and blog for cataloging projects, techy things I've learned 
   and other stuff.  
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.gavingreer.com" # the base hostname & protocol for your site, e.g. http://example.com
