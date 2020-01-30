@@ -14,8 +14,8 @@ author: Gavin Greer
 email: gavindgreer@gmail.com
 contact_email: hello@gavingreer.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal website and blog for cataloging projects, techy things I've learned 
-  and other stuff.  
+  Personal website and blog for cataloging projects, techy things
+  and other stuff I've learned.  
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.gavingreer.com" # the base hostname & protocol for your site, e.g. http://example.com
 lang: en

@@ -41,7 +41,7 @@
   repo: tweetme
 - name: plates
   status: in development
-  description: Web app to calculate the plates that should be added to a barbell to acheive a desired lift weight.
+  description: Web app to calculate the plates required to be added to a barbell to acheive a desired lift weight.
 - name: gavingreer.com
   status: active
   publish-date: 2020-02-02
