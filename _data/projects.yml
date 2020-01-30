@@ -21,7 +21,7 @@
   description: URL shortening service developed by following a <a href="https://www.codingforentrepreneurs.com/">CFE</a> course on <a href="https://www.udemy.com/">Udemy</a>. Published on <a href="https://linode.com">Linode</a> VPS running <a href="https://ubuntu.com/">Ubuntu</a> and <a href="https://www.nginx.com/">NGINX</a>.
 #  long:
   repo: lnkto
-#  img:
+  image: lnkto-co.png
 #  tech: [python, django]
 #  features: 
 - name: brucegreer.com
@@ -29,6 +29,7 @@
   publish-date: 2016-10-02
   description: Website for my Dad's music work. Site published with Media Temple Grid Service.
   url: http://www.brucegreer.com
+  image: brucegreer-com.png
 - name: sineanalytics.com
   status: in development
   publish-date: 2020-03-01
