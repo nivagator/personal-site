@@ -35,7 +35,7 @@ linkedin_username: gavingreer
 
 # Build settings
 #theme: minima
-theme: jekyll-whiteglass
+#theme: jekyll-whiteglass
 
 defaults:
   - scope:
