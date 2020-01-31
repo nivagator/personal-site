@@ -2,31 +2,28 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  {% assign title = page.title | default: site.title | escape %}
-  {% assign canonical = page.url | replace:'index.html','' | absolute_url %}
-  {% assign description = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | escape %}
+  {%- assign title = page.title | default: site.title | escape -%}
+  {%- assign canonical = page.url | replace:'index.html','' | absolute_url -%}
+  {%- assign description = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | escape -%}
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
-  {% if page.keywords %}
-    {% if page.keywords.first %}
-      {% assign keywords = page.keywords | join: ',' %}
-    {% else %}
-      {% assign keywords = page.keywords %}
-    {% endif %}
+  {%- if page.keywords -%}
+    {%- if page.keywords.first -%}
+      {%- assign keywords = page.keywords | join: ',' -%}
+    {%- else %}
+      {%- assign keywords = page.keywords -%}
+    {%- endif -%}
     <meta name="keywords" content="{{ keywords }}">
-  {% endif %}
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  {%- endif -%}
+  <link rel="stylesheet" href="{{ "/assets/main.css" | absolute_url }}">
   <link rel="canonical" href="{{ canonical }}">
-  {% assign feed_path = "/feed.xml" %}
-  {% if site.feed and site.feed.path %}
-    {% assign feed_path = site.feed.path %}
-  {% endif %}
+  {%- assign feed_path = "/feed.xml" -%}
+  {%- if site.feed and site.feed.path -%}
+    {%- assign feed_path = site.feed.path -%}
+  {%- endif -%}
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ feed_path | absolute_url }}">
-
-  {% include head_custom.html %}
-
-  {% if site.facebook_app_id %}<meta property="fb:admins" content="{{ site.facebook_app_id }}">{% endif %}
+  {%- include head_custom.html -%}
+  {%- if site.facebook_app_id -%}<meta property="fb:admins" content="{{ site.facebook_app_id }}">{%- endif -%}
   <meta property="og:title" content="{{ title }}">
   <meta property="og:site_name" content="{{ site.title | escape }}">
   <meta property="og:url" content="{{ canonical }}">
@@ -62,7 +59,7 @@
   {% elsif site.twitter_image %}
     <meta name="twitter:image:src" content="{{ site.twitter_image }}">
   {% endif %}
-
-  {% include fonts.html %}
-  {% include google_analytics.html %}
+  {%- include favicon.html -%}
+  {%- include fonts.html -%}
+  {%- include google_analytics.html -%}
 </head>
