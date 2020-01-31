@@ -21,4 +21,13 @@ During development of this project, my personal goals and self-imposed limitatio
 - Deployment
   - Target inital deployment date of 2020-02-03
   - Initial deployment will be a static transfer of site files through the commandline as a clone from Github.
-  - Long term goal is to utilize a CI/CD strategy using Jenkins/Github hooks/etc.  
+  - Long term goal is to utilize a CI/CD strategy using Jenkins/Github hooks/etc. 
+
+## Deployment Notes:
+
+### HTMLProofer
+- `htmlproofer --http-status-ignore "999" --url-ignore "/fonts.gstatic.com/" --assume-extension --check-favicon _site/`
+  - Linkedin urls might be correct but they are configured to pass HTTP 999 for some user agents. 
+  - Google Fonts DNS prefetch urls will fail 
+  - assume extension for jekyll sites 
+  - enable check favicon
