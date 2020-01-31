@@ -9,7 +9,7 @@ permalink: /projects/
   {%- assign sorted_projects = site.data.projects -%}
   {%- for project in sorted_projects -%}
   <div class="row">
-    <div class="col-sm-7">
+    <div class="{% if project.image %}col-sm-7{% else %}col-sm-12{% endif %}">
       <h2 class="title">
         {%- if project.status == "active" and project.url -%}<a href="{{ project.url }}">{{ project.name }}</a>
         {%- else -%}{{ project.name }}
@@ -29,11 +29,11 @@ permalink: /projects/
         <a href="https://github.com/{{ site.github_username }}/{{ project.repo }}">Github Repo</a>
         {%- endif -%}
       </div>
+    {%- if project.image -%}
     <div class="col-sm-5">
-      {%- if project.image -%}
       <img class="site" alt="{{ project.img-alt }}" src="{{ site.img_dir }}{{ project.image }}">
-      {%- endif -%}
     </div>
+    {%- endif -%}
   </div>
   {%- if forloop.last == false -%}<hr>{%- endif -%}
   {%- endfor -%}
