@@ -17,3 +17,21 @@ title: Gavin Greer
     <img class="headshot" alt="headshot" src="{{ site.img_dir | append: "headshot-med-400.jpg" | relative_url }}">
   </div>
 </div>
+<hr>
+{%- assign latest = site.posts.first -%}
+<p style="font-style: italic;font-size: smaller;">Here's the latest from the blog:</p>
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h2 class="" itemprop="name headline"><a href="{{ latest.url | relative_url}}">{{ latest.title | escape }}</a></h2>
+    <p class="post-meta">
+      <time datetime="{{ latest.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ latest.date | date: "%b %-d, %Y" }}
+      </time>
+      {% if latest.categories != empty or latest.tags != empty %}
+        {% include category_links.html categories=latest.categories tags=latest.tags %}
+      {% endif %}</p>
+  </header>
+  <div class="post-content" itemprop="articleBody">
+    {{ latest.content }}
+  </div>
+</article>
