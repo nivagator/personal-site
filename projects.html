@@ -5,7 +5,8 @@ title: Projects
 <h1>Web Projects</h1>
 
 <div class="projects">
-  {%- for project in site.data.projects -%}
+  {%- assign sorted_projects = site.data.projects -%}
+  {%- for project in sorted_projects -%}
   <div class="row">
     <div class="col-sm-7">
       <h2 class="title">

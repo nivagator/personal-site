@@ -49,3 +49,19 @@
   description: My personal website and blog.
   url: "/"
   repo: personal-site
+  image: gavingreer-com.png
+- name: HASH Check App
+  status: Active
+  publish-date: 2017-01-26
+  description: Project started to practice practical application of Python. App will generate a HASH string for a given file and, if provided, compare it to a control. 
+  repo: hash-check-app
+- name: SSRS Report Emailer
+  status: active
+  publish-date: 2018-03-09
+  description: Script package to automate the rendering of an SSRS report with or without customized parameter selection to various formats and subsequently send the report files to email recipients.
+  repo: python-download-ssrs
+- name: twitterbot
+  status: active
+  publish-date: 2018-05-15
+  description: Shell based twitterbot created by following a Digital Ocean guide using the pythong tweepy library. 
+  repo: python_twitterbot
