@@ -31,7 +31,7 @@ permalink: /projects/
       </div>
     {%- if project.image -%}
     <div class="col-sm-5">
-      <img class="site" alt="{{ project.img-alt }}" src="{{ site.img_dir }}{{ project.image }}">
+      <img class="site" alt="{{ project.img-alt }}" src="{{ site.img_dir | append: project.image | relative_url }}">
     </div>
     {%- endif -%}
   </div>
