@@ -37,6 +37,8 @@
   publish-date: 2020-03-01
   description: Company website for a local data reporting & analytics business. 
   url: http://www.sineanalytics.com
+  image: sineanalytics-com.png
+  img-alt: sine site screenshot
 - name: tweetme
   status: inactive
   publish-date: 2017-04-28
