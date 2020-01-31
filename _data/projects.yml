@@ -22,6 +22,7 @@
 #  long:
   repo: lnkto
   image: lnkto-co.png
+  img-alt: lnkto site screenshot
 #  tech: [python, django]
 #  features: 
 - name: brucegreer.com
@@ -30,6 +31,7 @@
   description: Website for my Dad's music work. Site published with Media Temple Grid Service.
   url: http://www.brucegreer.com
   image: brucegreer-com.png
+  img-alt: brucegreer site screenshot
 - name: sineanalytics.com
   status: in development
   publish-date: 2020-03-01
@@ -50,6 +52,7 @@
   url: "/"
   repo: personal-site
   image: gavingreer-com.png
+  img-alt: gavingreer site screenshot
 - name: HASH Check App
   status: Active
   publish-date: 2017-01-26
