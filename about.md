@@ -1,9 +1,8 @@
 ---
 layout: page
 permalink: /about/
+title: About Me
 ---
-## About Me
-
 I'm a very proud father of 3 kiddos: McKennah, Katie and Owen. I'm married to my best friend and high school sweetheart, Melanie. She's the glue that holds the entire family together and far too good to me. 
 
 Home will always be Flower Mound, Texas. We love the beach and make a yearly trip to Destin, Florida. If you ever get out that way, you have to eat at The Donut Hole and Louis Louis. This year we're taking a trip to Estes Park, Colorado and will do some hiking in Rocky Mountain National Park.
@@ -12,7 +11,7 @@ I have been a Texas Rangers baseball fan since before I can remember. I love bas
 
 ## What I Do
 
-Currently, I work as an Analytics Manager at Wells Fargo in Irving, Texas. I work in the Enterprise Analytics & Data Science organization specifically for the Analytic Quality Review team. My team works to ensure risk is minimized to Wells Fargo and its customers through in-depth programmatic reviews of internal remediation projects. 
+Currently, I work as an Analytics Manager at Wells Fargo in Irving, Texas. I work in the Enterprise Analytics & Data Science organization specifically for the Analytic Quality Review team.
 
 ## About This Site
 
