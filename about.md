@@ -17,5 +17,4 @@ Currently, I work as an Analytics Manager at Wells Fargo in Irving, Texas. I wor
 
 This site (or, more accurately, the content at this URL) has been in some phase of development for more than decade. It seems I would always bite off more than my abilities and time would allow. This is my attempt to finally get a website, professional resume and blog together all in one place and learn some things along the way.
 
-This site is hosted with [Linode](https://www.linode.com) on a VM running Ubuntu and served by Nginx. The site is generated with [Jekyll](https://www.jekyllrb.com). I started by using the [whiteglass](https://github.com/yous/whiteglass) theme, but have since customized and moved to a local installation. Source code for this site can be found [here](https://www.github.com/{{ site.github_username}}/personal-site). 
-
+This site is hosted with [Linode](https://www.linode.com) on a VM running Ubuntu and served by Nginx. The site is generated with [Jekyll](https://www.jekyllrb.com). I started by using the [whiteglass](https://github.com/yous/whiteglass) theme, but have since customized and moved to a local installation. Source code for this site can be found [here](https://www.github.com/{{ site.github_username}}/personal-site). I'm using Git Hooks to publish remotely. 
