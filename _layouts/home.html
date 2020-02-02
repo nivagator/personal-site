@@ -7,7 +7,7 @@ layout: default
   {{ content }}
 
   {% capture site_lang %}{{ site.lang | default: "en" }}{% endcapture %}
-
+  {% if paginator %}true{% else %}false{% endif %}
   <ul class="post-list">
     {% for post in paginator.posts %}
       {% capture post_lang %}{{ post.lang | default: site_lang }}{% endcapture %}
