@@ -16,7 +16,7 @@ I can completely understand the frustration you might be feeling upon finding th
 
 ## Learn VIM
 
-I was skeptical at first. I used `nano` for most quick edits in the shell and VSCode for all my other development work. But after working through [VIM with Vigor](http://linuxcommand.org/lc3_adv_vimvigor.php) from the writers of *The Linux Command Line* book, I as hooked. 
+I was skeptical at first. I used `nano` for most quick edits in the shell and VSCode for all my other development work. But after working through [VIM with Vigor](http://linuxcommand.org/lc3_adv_vimvigor.php) from the writers of *The Linux Command Line* book, I was hooked. 
 
 Give it a shot. There's a lot to learn and its actually a lot of fun.
 
