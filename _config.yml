@@ -37,6 +37,8 @@ linkedin_username: gavingreer
 #theme: minima
 #theme: jekyll-whiteglass
 
+gems: [jekyll-paginate-v2]
+
 defaults:
   - scope:
       path: "assets/img"
