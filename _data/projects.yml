@@ -70,3 +70,8 @@
   publish-date: 2018-05-15
   description: Shell based twitterbot created by following a Digital Ocean guide using the pythong tweepy library. 
   repo: python_twitterbot
+- name: server files
+  status: active
+  publish-date: 2020-02-06
+  description: Collection of files used to set up and customize a new shell environment.
+  repo: server-files
