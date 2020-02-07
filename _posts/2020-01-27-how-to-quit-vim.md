@@ -2,12 +2,13 @@
 layout: post
 title: How to quit VIM
 categories: [tutorial, vim]
+excerpt_separator: <!--more-->
 ---
 
 Welcome to the wonderful world of VIM. :)
 
-I can completely understand the frustration you might be feeling upon finding this site. Its easy though:
-
+I can completely understand the frustration you might be feeling upon finding this site. Its easy though.
+<!--more-->
 1. **Press `<ESC>`**
   - This is to make sure you are in command mode 
 2. **Type `:q` and press `<ENTER>`** 
