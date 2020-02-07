@@ -9,8 +9,8 @@ Welcome to the wonderful world of VIM. :)
 I can completely understand the frustration you might be feeling upon finding this site. Its easy though:
 
 1. **Press `<ESC>`**
-  - This is to make sure you are in "command mode" 
-2. **Type `:q`**
+  - This is to make sure you are in command mode 
+2. **Type `:q` and press `<ENTER>`** 
   - In VIM, you begin commands with the colon followed by any number of characters that represent commands. In this case, you want `q` for quit. 
 3. **Learn how to use VIM because its totally worth it.**
 
