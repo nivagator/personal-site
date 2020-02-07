@@ -31,7 +31,12 @@ title: Gavin Greer
         {% include category_links.html categories=latest.categories tags=latest.tags %}
       {% endif %}</p>
   </header>
-  <div class="post-content" itemprop="articleBody">
-    {{ latest.content }}
+  <div class="post-content">
+  {{ latest.excerpt }}
   </div>
+  {% if latest.content contains site.excerpt_separator %}
+    <p class="post-continue">
+      <a href="{{ latest.url | relative_url }}">Read on &rarr;</a>
+    </p>
+  {% endif %}
 </article>

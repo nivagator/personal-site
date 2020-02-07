@@ -7,9 +7,9 @@ layout: default
   {{ content }}
 
   {% capture site_lang %}{{ site.lang | default: "en" }}{% endcapture %}
-  {% assign recentposts = site.posts | limit: 5 %}
+  {% assign recentposts = site.posts %}
   <ul class="post-list">
-    {% for post in recentposts %}
+    {% for post in recentposts limit: 5 %}
     {% capture post_lang %}{{ post.lang | default: site_lang }}{% endcapture %}
       {% capture lang %}{% if post_lang != site_lang %}{{ post_lang }}{% endif %}{% endcapture %}
 
