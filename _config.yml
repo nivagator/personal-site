@@ -20,6 +20,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.gavingreer.com" # the base hostname & protocol for your site, e.g. http://example.com
 lang: en
 timezone: America/Chicago
+future: false
 
 # Asset dirs
 css_dir: "/assets/css/"
