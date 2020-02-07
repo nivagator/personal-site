@@ -6,6 +6,8 @@ _site
 .jekyll-metadata
 Gemfile.lock
 *.bak
+_drafts
+
 ### Theme ###
 whiteglass.md
 
