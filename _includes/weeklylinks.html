@@ -1,0 +1,20 @@
+{%- for edition in site.data.weeklylinks.editions -%}
+{%- if edition.editionid == page.meta.editionid -%}  
+{%- for item in edition.items -%}  
+<h2><a href="{{ item.url }}">{{ item.title }}</a>
+{%- if item.outlet -%}
+<em><span style="font-size: smaller;"> - {{ item.outlet }}</span></em>
+{%- endif -%}
+</h2>  
+{%- if item.youtube -%}
+{%- include youtubePlayer.html id=item.youtube -%}
+{%- endif -%}
+<p>
+    <strong>tl;dr</strong>
+    <br>
+    {{ item.tldr }}
+</p>
+{%- if forloop.last == false -%}<hr>{%- endif -%}
+{%- endfor -%}  
+{%- endif -%}
+{%- endfor -%} 

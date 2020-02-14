@@ -1,0 +1,28 @@
+editions:
+- editionid: 1
+  date: 2020-02-14
+  items:
+  - title: "A first look at Microsoft’s new Windows 10X operating system for dual screens"
+    url: https://www.theverge.com/2020/2/11/21132826/microsoft-windows-10x-features-dual-screen-foldable-hands-on-developers
+    outlet: The Verge
+    tldr: "Microsoft announced two dual screen devices late in 2019: the laptop sized [Surface Neo](https://www.microsoft.com/en-us/surface/devices/surface-neo) and the dual screen smartphone [Surface Duo](https://www.microsoft.com/en-us/surface/devices/surface-duo). There's lots to get excited about with these devices. Although dual screen laptop prototypes and even production models have existed in the past, it was without native Windows OS support. This article, walks through the new Windows 10X designed for dual, hinged devices. Overall, it looks great. I'm excited to see what else they do with it."
+  - title: Are we at Peak Smartphone?
+    url: https://youtu.be/-DtSrdh5dHU
+    outlet: MKBHD - YouTube
+    youtube: -DtSrdh5dHU
+    tldr: Somewhat predictably, Marques' response is both *yes* and *no*. I think that yeah, we might be at peak smartphone in the current "glass sandwich" form factor. Where I differ might be in the things he mentions as "outer edge". Are folding phones better? Time will tell. His comparison to "peak car" is interesting too.
+  - title: "How to Change the Default Terminal in Ubuntu"
+    url: https://itsfoss.com/change-default-terminal-ubuntu/
+    outlet: It's FOSS
+    tldr: "I had never really considered that there were different terminals that could be installed. Plus, I've never had a reason to look for alternatives based on lack of functionality in the default choice. It makes sense though. The terminal is just another piece of software. I think I still prefer the simplicity and transparency of default installations. "
+  - title: "Synology DS218j: A quick and simple way to add terabytes of network attached storage"
+    url: https://www.zdnet.com/article/synology-ds218j-quick-and-simple-way-to-add-terabytes-of-network-attached-storage/
+    outlet: ZDNet
+    tldr: "I have a Synology DS216j at home and I've been really happy with it. This is a very qucik look at and updated model. What sets Synology devices apart from other options is the simplicity of setup while still offering a lot of functionality when you're ready for it. If you are looking for a good NAS devices, this is a great option."
+- editionid: 2
+  date: 2020-02-21
+  items:
+    - title: title 1
+      url: https://gavingreer.com
+    - title: title 2
+      url: https://gavingreer.com
