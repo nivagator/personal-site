@@ -21,6 +21,7 @@ url: "https://www.gavingreer.com" # the base hostname & protocol for your site, 
 lang: en
 timezone: America/Chicago
 future: false
+excerpt_separator: <!--more-->
 
 # Asset dirs
 css_dir: "/assets/css/"
