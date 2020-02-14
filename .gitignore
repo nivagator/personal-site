@@ -7,6 +7,7 @@ _site
 Gemfile.lock
 *.bak
 _drafts
+_ignore
 
 ### Theme ###
 whiteglass.md
