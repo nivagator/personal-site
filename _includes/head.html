@@ -56,7 +56,7 @@
   <meta name="twitter:image2" content="{{ page.twitter_card.image2 }}">
   <meta name="twitter:image3" content="{{ page.twitter_card.image3 }}">
   {% else %}
-  <meta name="twitter:image:src" content="{{ page.twitter_card.image }}">
+  <meta name="twitter:image" content="{{ page.twitter_card.image }}">
   {% if page.twitter_card.type == 'photo' %}
   {% if page.twitter_card.width %}
   <meta name="twitter:image:width" content="{{ page.twitter_card.width }}">
@@ -67,7 +67,7 @@
   {% endif %}
   {% endif %}
   {% elsif site.twitter_image %}
-  <meta name="twitter:image:src" content="{{ site.twitter_image }}">
+  <meta name="twitter:image" content="{{ site.twitter_image | absolute_url }}">
   {% endif %}
   {%- include favicon.html -%}
   {%- include fonts.html -%}
