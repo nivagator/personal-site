@@ -9,6 +9,15 @@
 {%- if item.youtube -%}
 {%- include youtubePlayer.html id=item.youtube -%}
 {%- endif -%}
+
+{% if item.siteimg %}
+<img style="margin-bottom: 15px" alt="{{ item.imgalt }}" src="{{ site.img_dir | append: item.siteimg | relative_url }}"> 
+{% endif %}
+
+{% if item.imglink %}
+<img style="margin-bottom: 15px" alt="{{ item.imgalt }}" src="{{ item.imglink }}">
+{% endif %}
+
 <p>
     <strong>tl;dr</strong>
     <br>
