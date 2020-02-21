@@ -22,7 +22,18 @@ editions:
 - editionid: 2
   date: 2020-02-21
   items:
-    - title: title 1
-      url: https://gavingreer.com
-    - title: title 2
-      url: https://gavingreer.com
+    - title: "Astros' Cheating Haunts Clayton Kershaw's Memory of 2017 World Series"
+      url: https://www.si.com/mlb/2020/02/20/astros-cheating-scandal-clayton-kershaw
+      outlet: "Sports Illustrated"
+      tldr: "I'm a big Clayton Kershaw fan and this just makes me sad. Kershaw has a reputation for being completely dominant in the regular season, but choking in the post-season. 2017 looked to be the year he turned that around. That is, until he played a game against the Astros at Minute Maid park in Game 5 of the World Series. Kershaw gave up two leads and the Dodgers lost the game and eventually the Series. The recent news that the Astros cheated in 2017 puts all of this in a new and very ugly light. To his credit, Kershow is doing his part to move past it."
+    - title: Cool WSL tips and tricks you (or I) didn't know were possible
+      url: https://www.hanselman.com/blog/CoolWSLWindowsSubsystemForLinuxTipsAndTricksYouOrIDidntKnowWerePossible.aspx
+      outlet: Scott Hanselman
+      tldr: "This article looks at a few examples of the new tools available in WSL2. The tight integration with VS Code is very cool. You can run multiple Linux distros side by side and even migrate Linux installations between Windows systems with just a few Powershell commands. He mentions <a href=\"https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701\">Windows Terminal</a> and I'd also recommend checking it out. You can tell Scott gets a kick out of this stuff. He seems to have fun with it."   
+    - title: "Moving efficiently in the CLI"
+      url: https://clementc.github.io/blog/2018/01/25/moving_cli/
+      outlet: CLÉMENT CHASTAGNOL
+#     siteimg: moving_cli.png
+      imglink: https://clementc.github.io/figures/moving_cli.png
+      imgalt: moving_cli
+      tldr: "I originally saw this on Twitter. It's a handy reference for quickly navigating through text in the CLI. I didn't know most of these keyboard shortcuts. Neat."
