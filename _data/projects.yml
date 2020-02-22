@@ -44,6 +44,11 @@
   publish-date: 2017-04-28
   description: Django web project clone of Twitter. Built following a CFE Django tutorial 
   repo: tweetme
+- name: weather app
+  status: in development
+  description: Simple JavaScript weather app using the browser location, DarkSky API and Skycons canvas elements.
+  image: wxapp.png
+  repo: wxapp
 - name: plates
   status: in development
   description: Web app to calculate the plates required to be added to a barbell to acheive a desired lift weight.
