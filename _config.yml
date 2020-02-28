@@ -35,6 +35,12 @@ github_username:  nivagator
 google_analytics: UA-157023360-1
 linkedin_username: gavingreer
 
+# Disqus Comments
+disqus:
+# Leave shortname blank to disable comments site-wide.
+# Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+  shortname: gavingreer
+
 # Build settings
 #theme: minima
 #theme: jekyll-whiteglass
