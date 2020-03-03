@@ -3,6 +3,7 @@ layout: post
 title: How to quit VIM
 categories: [tutorial, vim]
 excerpt_separator: <!--more-->
+permalink: tutorial/vim/2020/01/27/how-to-quit-vim.html
 ---
 
 Welcome to the wonderful world of VIM. :)

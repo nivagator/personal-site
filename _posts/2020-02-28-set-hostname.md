@@ -4,6 +4,7 @@ layout: post
 categories:
   - tutorial
   - linux
+permalink: /tutorial/linux/2020/02/28/set-hostname.html
 comments: true
 ---
 

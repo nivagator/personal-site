@@ -5,6 +5,7 @@ categories:
   - how i use
   - git
 excerpt_separator: <!--more-->
+permalink: how%20i%20use/git/2020/02/07/how-i-use-git.html
 ---
 Git is an open source version control system.
 
