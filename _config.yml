@@ -22,6 +22,7 @@ lang: en
 timezone: America/Chicago
 future: false
 excerpt_separator: <!--more-->
+permalink: /:year/:month/:day/:slug
 
 # Asset dirs
 css_dir: "/assets/css/"
@@ -62,11 +63,9 @@ plugins:
 jekyll-archives:
   enabled:
     - categories
-    - tags
   layout: category_archives
   permalinks:
     category: /categories/:name/
-    tag: /tags/:name/
 
 
 ##################################################
