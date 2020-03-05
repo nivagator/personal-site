@@ -80,3 +80,8 @@
   publish-date: 2020-02-06
   description: Collection of files used to set up and customize a new shell environment.
   repo: server-files
+- name: darksky proxy
+  status: active
+  description: Simple Node.js proxy server for the DarkSky weather API. Adapted from <a href="https://www.spatialtimes.com/2019/03/Create-a-JavaScript-Weather-App-with-Location-Data-Part-2/">Spatial Times</a>
+  repo: darksky_proxy
+  publish-date: 2020-03-05
