@@ -75,10 +75,21 @@ $ sudo apt install nfs-common
   ```bash
   $ sudo mkdir /mnt/backups
   ```
-- Attach the NAS shared folder (*remember the mount path from earlier?*) (`/volume1/backups`) to the newly created backup mount point(`/mnt/backups`). The local IP of my NAS is `192.168.1.30`. Replace this with your value. No response is expected from this command.
+- Attach the NAS shared folder 
+
   ```bash
-  $ sudo mount 192.168.1.30:/volume1/backups /mnt/backups
+  $ sudo mount <nas.ip.address>:[/share/mount-path] [/mnt/point]
   ```
+
+  Using my values, here's the script I executed. Replace these with your values. No response is expected from this command.
+    - Remember the mount path from earlier? - `/volume1/backups` 
+    - RaspberryPi mount point - `/mnt/backups`
+    - NAS IP - `192.168.1.30`.
+
+      ```bash
+      $ sudo mount 192.168.1.30:/volume1/backups /mnt/backups
+      ```
+
   - If you get a `no such file or directory` error, make sure you're using `sudo` and double check the IP address, NAS mount path and local mount point.
   - if you get a `Timed out` error, check your [Synology firewall](#enable-nfs-access-through-the-synology-firewall) settings.  
 
@@ -90,5 +101,9 @@ $ sudo apt install nfs-common
   ```bash 
   192.168.1.30:/volume1/backups  5.4T  3.7T  1.8T  68% /mnt/backups
   ```
+
+## Done
+
+Not too bad! You now have access to the shared folder to use it however you need. You can also mount other shares by creating new mount points and following the same set of instructions to enable NFS access. Using the same RaspberryPi and Synology NAS, I have `/mnt/backups` and `/mnt/files` attached for different purposes. Neat!
 
 Let me know if you have questions or if there's something I missed.
