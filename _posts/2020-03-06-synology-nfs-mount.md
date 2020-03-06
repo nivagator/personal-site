@@ -31,7 +31,7 @@ Navigate to the Synology DSM, open the Control Panel and select Shared Folder.
 
 ## Edit Shared Folder NFS Permissions  
 
-Once the folder has been created, we have allow NFS access for the RaspberryPi to connect to the shared folder on the Synology NAS. We do this by adding an NFS rule mapped to the IP address of the Pi (`192.168.1.62`).
+Once the folder has been created, we have to allow NFS access for the RaspberryPi to connect to the shared folder on the Synology NAS. We do this by adding an NFS rule mapped to the IP address of the Pi (`192.168.1.62`).
   - Select the `backups` Shared folder and click Edit > NFS Permissions.
   ![control-panel]({{ site.img_dir }}control-panel.png)
     - **Note:**Make note of the folder mount path at the bottom left of this window. We'll need this later.  
@@ -55,7 +55,7 @@ If you have the Synology NAS built in firewall active, you'll need to enable rul
 - Check your firewall status in the DSM Control Panel under the Security > Firewall tab.
   ![cp-firewall]({{ site.img_dir }}cp-firewall.png)
 - Click Edit Rules > Create 
-- Under Ports choose Select from a list of built-in application and click Select. Find Mac/Linux file server and check the box to enable. 
+- Under Ports choose Select from a list of built-in applications and click Select. Find Mac/Linux file server and check the box to enable. 
   ![firewall-nfs]({{ site.img_dir }}firewall-nfs.png)
 - If you plan to use this shared folder with Windows machines as well, enable the Windows file server too. 
 - Click OK.
@@ -75,7 +75,7 @@ $ sudo apt install nfs-common
   ```bash
   $ sudo mkdir /mnt/backups
   ```
-- Attach the NAS to the newly created backup mount point. The local IP of my NAS is `192.168.1.30`. Replace this with your value. No response is expected from this command.
+- Attach the NAS shared folder (*remember the mount path from earlier?*) (`/volume1/backups`) to the newly created backup mount point(`/mnt/backups`). The local IP of my NAS is `192.168.1.30`. Replace this with your value. No response is expected from this command.
   ```bash
   $ sudo mount 192.168.1.30:/volume1/backups /mnt/backups
   ```
