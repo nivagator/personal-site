@@ -30,8 +30,8 @@ img_dir: "/assets/img/"
 js_dir: "/assets/js/"
 
 # Social Media
-twitter_username: gavin_greer
-twitter_image: /assets/img/android-chrome-512x512.png
+# twitter_username: gavin_greer
+# twitter_image: /assets/img/android-chrome-512x512.png
 github_username:  nivagator
 google_analytics: UA-157023360-1
 linkedin_username: gavingreer
