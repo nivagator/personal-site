@@ -1,3 +1,4 @@
+.vscode/
 ### Jekyll ###
 _site
 .sass-cache
@@ -8,6 +9,7 @@ Gemfile.lock
 *.bak
 _drafts
 _ignore
+vendor/
 
 ### Theme ###
 whiteglass.md
